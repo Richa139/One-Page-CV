@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Richa</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sec{
+            position: relative;
+        }
+        .item{
+            border: 1px solid  rgba(0, 0, 0, 0.15);
+        }
+        
+        .pr{
+           left: 0;
+           bottom: 0;
+           font-size: 1.4rem;
+           
+           padding: 0.01em 16px;
+           position: absolute;
+           margin: 20px;
+        }
+        .container{
+            padding: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        #myself{
+            grid-area: myself;
+            /* width: 40%; */
+        }
+        #work{
+            grid-area: work;
+        }
+        #exper{
+            grid-area: exper;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'myself work work work'
+            'myself exper exper exper'
+            'footer footer footer footer'
+        }
+        .sec1{
+            padding: 10px;
+            color: rgb(128, 128, 128);
+        }
+        .sec1 i{
+            font-size: 20px;
+        }
+        .sec1 p{
+            font-size: 18px;
+        }
+        i{
+            margin: 5px;
+            margin-right: 15px;
+            color: #009688;
+            padding-bottom: 15px;
+        }
+        .po{
+            margin-top: 10px;
+        }
+        .per{
+            padding-left: 3px;
+            padding-bottom: 3px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #009688;
+            border-radius: 50px;
+            text-align: center;
+            color: white;
+        }
+        .o{
+            margin-top: 15px;
+        }
+        #ri{
+         padding: 13px;
+        }
+        .head{
+            font-size: 30px;
+            color: grey;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+        .qop{
+            padding: 15px;
+            color: grey;
+            font-size: 20px;
+        }
+        .space{
+            margin: 20px;
+            color: #009688;
+        }
+        span{
+            margin: 10px;
+            background-color: #009688;
+            border-radius: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: white;
+        }
+        .whit{
+            color: black;
+            padding-bottom: 20px;
+        }
+        .m{
+            color: grey;
+            padding-top: 25px;
+            font-size: 20px;
+        }
+        .spa{
+            margin-top: 20px;
+        }
+       footer{
+           padding: 30px;
+           background-color: teal;
+           text-align: center;
+           color: white;
+       }
+       footer i{
+           color: white;
+           margin: 0;
+       }
+       footer p{
+           padding-bottom: 10px;
+       }
+       @media  only screen and (max-width:900px) {
+           .container{
+        grid-template-areas: 
+            'myself myself myself myself'
+            'exper exper exper exper'
+            'work work work work '
+            'footer footer footer footer'
+       } 
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="myself" class="item">
+            <div class="sec">   
+        <div class="img">
+            <img src="avatar_hat.jpeg" alt="" width="450" height="300">
+        </div>
+        <div class="pr">
+            <h2>Jane Doe</h2>
+        </div>
+        </div>
+        <div class="sec1">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
+        Designer</p>
+        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i> London ,UK</p>
+        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
+        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1223344556677</p>
+        <hr>
+        <p class="po">
+            <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills
+        </p>
+        <p>Adobe photoshop</p>
+        <div class="mar">
+           <p class="per">90%</p>
+        </div>
+        <p>photography</p>
+        <div class="mar">
+           <p class="per">80%</p>
+        </div>
+        <p>Illustrator</p>
+        <div class="mar">
+           <p class="per">75%</p>
+        </div>
+        <p>Media</p>
+        <div class="mar">
+           <p class="per">50%</p>
+        </div>
+        <br>
+        <hr>
+        <p class="o"><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</p>
+        <p>English</p>
+        <div class="mar">
+           <p class="per" id="ri"></p>
+        </div>
+        <p>Spanish</p>
+        <div class="mar">
+           <p class="per" id="ri"></p>
+        </div>
+        <p>German</p>
+        <div class="mar">
+           <p class="per" id="ri"></p>
+        </div>
+        </div>
+        </div>
+        <div id="work" class="item">
+            <p class="head"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</p>
+        <p class="qop">Front End Developer / w3schools.com</p>
+        <div class="space">
+        <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 -
+        <span>Current</span></p>
+        <p class="whit">
+            Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+            <p class="m">Web Developer / something.com</p>
+            <div class="spa">
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>JMar 2012 - Dec 2014
+                </p>
+                <p class="whit">
+                    Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+        </div>
+        <hr>
+        <p class="m">Graphic Designer / designsomething.com</p>
+        <div class="spa">
+            <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>JMar 2012 - Dec 2014
+            </p>
+            <p class="whit">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+        </div>
+        </div>
+        <div id="exper" class="item">
+            <p class="head"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</p>
+            <p class="qop"> w3schools.com</p>
+            <div class="space">
+            <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever
+            </p>
+            <p class="whit">
+                Web Development! All I need to know in one place</p>
+                <hr>
+                <p class="m">London Business School</p>
+                <div class="spa">
+                    <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>JMar 2013 - 2015
+                    </p>
+                    <p class="whit">
+                        Master Degree</p>
+            </div>
+            <hr>
+            <p class="m">School of Coding</p>
+            <div class="spa">
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2010 - 2013
+                </p>
+                <p class="whit">
+                    Bachelor Degree</p>
+        </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <p>Find me on social media.</p>
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <br>
+            <p>POWERED BY RICHA KOCHAR</p>
+        </footer>
+    </div>
+</body>
+</html>
